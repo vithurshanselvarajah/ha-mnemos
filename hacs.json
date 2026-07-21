@@ -1,0 +1,6 @@
+{
+  "name": "Mnemos",
+  "homeassistant": "2025.1.0",
+  "render_readme": true,
+  "country": ["GB", "US", "AU", "CA", "DE", "FR", "IN", "ZA", "IE", "NZ"]
+}

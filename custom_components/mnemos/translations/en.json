@@ -1,0 +1,64 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mnemos",
+        "description": "Set up the Mnemos face-recognition backend.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "use_ssl": "Use SSL",
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the Mnemos backend.",
+      "invalid_api_key": "The API key was rejected. Make sure it is an Identify-Only or Full-Admin key from the Mnemos frontend.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This Mnemos backend is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Mnemos options",
+        "data": {
+          "scan_interval": "Polling interval (seconds)",
+          "api_key": "New API key (leave unchanged to keep current)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect with the new key.",
+      "invalid_api_key": "The new API key was rejected."
+    }
+  },
+  "services": {
+    "identify": {
+      "name": "Identify",
+      "description": "Send an image to the Mnemos backend. Returns matches and unknown faces in the action response.",
+      "fields": {
+        "entity_id": {
+          "name": "Camera entity",
+          "description": "A `camera.*` entity to grab the latest still from. Mutually exclusive with `file_path`."
+        },
+        "file_path": {
+          "name": "File path",
+          "description": "Absolute path to an image file on the Home Assistant host. Mutually exclusive with `entity_id`."
+        },
+        "timeout": {
+          "name": "Timeout",
+          "description": "Timeout (seconds) for fetching the camera image and uploading it."
+        }
+      }
+    },
+    "refresh": {
+      "name": "Refresh",
+      "description": "Force-refresh the Mnemos health and model sensors.",
+      "fields": {}
+    }
+  }
+}

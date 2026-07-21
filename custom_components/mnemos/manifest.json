@@ -1,0 +1,14 @@
+{
+  "domain": "mnemos",
+  "name": "Mnemos",
+  "version": "1.0.0",
+  "config_flow": true,
+  "single_config_entry": true,
+  "iot_class": "local_polling",
+  "integration_type": "service",
+  "issue_tracker": "https://github.com/vithurshan-selvarajah/ha-mnemos/issues",
+  "codeowners": ["@vithurshan-selvarajah"],
+  "requirements": ["aiohttp>=3.9.0"],
+  "documentation": "https://github.com/vithurshan-selvarajah/ha-mnemos",
+  "loggers": ["aiohttp", "custom_components.mnemos"]
+}

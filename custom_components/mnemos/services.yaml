@@ -1,0 +1,42 @@
+identify:
+  name: Identify
+  description: >-
+    Send an image to the Mnemos face-recognition backend. Returns the
+    matches and unknown faces in the action response (use
+    `response.result` in the UI or the `response` variable in scripts).
+  fields:
+    entity_id:
+      name: Camera entity
+      description: >-
+        A `camera.*` entity to grab the latest still from. Mutually
+        exclusive with `file_path`.
+      required: false
+      selector:
+        entity:
+          domain: camera
+    file_path:
+      name: File path
+      description: >-
+        Absolute path to an image file on the Home Assistant host
+        (e.g. `/share/snapshot.jpg`). Mutually exclusive with `entity_id`.
+      required: false
+      example: /share/snapshot.jpg
+      selector:
+        text:
+    timeout:
+      name: Timeout
+      description: >-
+        Timeout (seconds) for fetching the camera image and uploading it.
+      default: 30
+      example: 30
+      selector:
+        number:
+          min: 5
+          max: 120
+          unit_of_measurement: s
+          mode: slider
+refresh:
+  name: Refresh
+  description: >-
+    Force-refresh the Mnemos health and model sensors.
+  fields: {}

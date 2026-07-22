@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/vithurshanselvarajah/ha-mnemos"><img alt="Repository" src="https://img.shields.io/badge/github-vithurshan--selvarajah%2Fha--mnemos-181717?logo=github" /></a>
+  <a href="https://github.com/vithurshanselvarajah/Mnemos-HA"><img alt="Repository" src="https://img.shields.io/badge/github-vithurshan--selvarajah%2Fha--mnemos-181717?logo=github" /></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-4f46e5" /></a>
   <a href="https://hacs.xyz/"><img alt="HACS" src="https://img.shields.io/badge/HACS-Custom-06b6d4?logo=homeassistantcommunitystore&logoColor=white" /></a>
 </p>
@@ -34,7 +34,7 @@ A HACS integration for [Mnemos](https://github.com/vithurshan-selvarajah/mnemos)
 
 1. Make sure [HACS](https://hacs.xyz/) is installed.
 2. **HACS → Integrations → ⋮ → Custom repositories**, add:
-   - Repository: `[vithurshanselvarajah/ha-mnemos](https://github.com/vithurshanselvarajah/ha-mnemos]`
+   - Repository: `[vithurshanselvarajah/Mnemos-HA](https://github.com/vithurshanselvarajah/Mnemos-HA]`
    - Category: **Integration**
 3. Search for **Mnemos** in HACS, install it.
 4. Restart Home Assistant.

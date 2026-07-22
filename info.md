@@ -44,7 +44,7 @@ automation:
 
 ## Configuration
 
-1. Install via HACS (custom repository → add `vithurshan-selvarajah/ha-mnemos`).
+1. Install via HACS (custom repository → add `vithurshan-selvarajah/Mnemos-HA`).
 2. Add the **Mnemos** integration.
 3. Enter the Mnemos backend URL (default `http://mnemos-backend:8000` — works if HA can resolve the Docker service name) and an API key.
 4. An **Identify-Only** API key from the Mnemos frontend is sufficient.

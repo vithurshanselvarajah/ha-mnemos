@@ -195,4 +195,4 @@ logger:
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+[LICENSE](LICENSE).
